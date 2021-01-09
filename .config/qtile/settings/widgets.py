@@ -65,19 +65,22 @@ primary_widgets = [
 
     icon(bg="color4", text=' '),  # Icon: nf-fa-download
 
-    widget.Pacman(**base(bg='color4'), update_interval=1800),
+    widget.CheckUpdates(**base(bg='color4'), update_interval=1800),
 
-    powerline('color3', 'color4'),
+    #powerline('color3', 'color4'),
 
-    icon(bg="color3", text=' '),  # Icon: nf-fa-feed
+    #icon(bg="color3", text=' '),  # Icon: nf-fa-feed
 
-    widget.Net(**base(bg='color3'), interface='wlp2s0'),
+    #widget.Wlan(**base(bg='color3'), interface='wlp2s0'),
+    #widget.Net(**base(bg='color3'), interface='wlp2s0'),
+    #widget.Battery(**base(bg='color3'), update_interval=1800),
 
-    powerline('color2', 'color3'),
+    powerline('color2', 'color4'),
 
     widget.CurrentLayoutIcon(**base(bg='color2'), scale=0.65),
 
     widget.CurrentLayout(**base(bg='color2'), padding=5),
+    #widget.PulseVolume(**base(bg='color2')),
 
     powerline('color1', 'color2'),
 

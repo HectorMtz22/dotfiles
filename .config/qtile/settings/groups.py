@@ -18,10 +18,11 @@ from settings.keys import mod, keys
 # nf-mdi-image,
 # nf-fa-video_camera,
 # nf-seti-config,
+# nf-fa-spotify,
 # nf-mdi-layers
 
 groups = [Group(i) for i in [
-    "   ", "   ", "   ", "   ", "   ", "   ", "   ", "   "
+    "   ", "   ", "   ", "   ", "   ", "   ", "   ", "   ", "   "
 ]]
 
 for i, group in enumerate(groups):

@@ -23,8 +23,8 @@ call plug#begin('~/.vim/plugged')
 Plug 'morhetz/gruvbox'
 " Plug 'safv12/andromeda.vim'
 
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+"Plug 'vim-airline/vim-airline'
+"Plug 'vim-airline/vim-airline-themes'
 
 " IDE 
 Plug 'easymotion/vim-easymotion'
@@ -34,6 +34,9 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
 Plug 'ap/vim-css-color'
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'npm install',
+  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
 
 call plug#end()
 
@@ -51,7 +54,8 @@ let NERDTreeQuitOnOpen=1
 let mapleader=" "
 nmap <Leader>w :w<CR>
 nmap <Leader>q :q<CR>
-nmap <Leader>t :sp term://zsh<CR>
+" Actually is not necessary
+" nmap <Leader>t :sp term://zsh<CR>
 map <C-n> :NERDTreeToggle<CR>
 
 set backupcopy=yes
@@ -75,3 +79,4 @@ inoremap (, (<CR>),<C-c>O
 inoremap [; [<CR>];<C-c>O
 inoremap [, [<CR>],<C-c>O
 tnoremap <Esc> <C-\><C-n>
+vmap <C-c> y:call system("xclip -i -selection clipboard", getreg("\""))<CR>:call system("xclip -i", getreg("\""))<CR> 

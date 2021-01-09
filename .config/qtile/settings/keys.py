@@ -74,15 +74,14 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     # ------------ Hardware Configs ------------
 
     # Volume
-    # I have to recode this, because it can decompose my speakers
     ([], "XF86AudioLowerVolume", lazy.spawn(
-        "pactl set-sink-volume @DEFAULT_SINK@ -5%"
+        "pamixer --decrease 5"
     )),
     ([], "XF86AudioRaiseVolume", lazy.spawn(
-        "pactl set-sink-volume @DEFAULT_SINK@ +5%"
+        "pamixer --increase 5"
     )),
     ([], "XF86AudioMute", lazy.spawn(
-        "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+        "pamixer --toggle-mute"
     )),
 
     # Brightness
