@@ -80,3 +80,5 @@ inoremap [; [<CR>];<C-c>O
 inoremap [, [<CR>],<C-c>O
 tnoremap <Esc> <C-\><C-n>
 vmap <C-c> y:call system("xclip -i -selection clipboard", getreg("\""))<CR>:call system("xclip -i", getreg("\""))<CR> 
+
+hi Normal guibg=NONE ctermbg=NONE
