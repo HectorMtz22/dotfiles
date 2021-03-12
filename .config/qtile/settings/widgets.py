@@ -12,7 +12,7 @@ base = lambda fg='text', bg='dark': {
 def separator(): return widget.Sep(**base(), linewidth=0, padding=5)
 
 
-icon = lambda fg='text', bg='dark', fontsize=16, text="?": widget.TextBox(
+icon = lambda fg='text', bg='dark', fontsize=12, text="?": widget.TextBox(
     **base(fg, bg),
     fontsize=fontsize,
     text=text,
@@ -31,7 +31,7 @@ def workspaces(): return [
     separator(),
     widget.GroupBox(
         **base(fg='light'),
-        font='UbuntuMono Nerd Font',
+        font='Anonymice Nerd Font',
         fontsize=19,
         margin_y=3,
         margin_x=0,
@@ -65,7 +65,7 @@ primary_widgets = [
 
     icon(bg="color4", text=' '),  # Icon: nf-fa-download
 
-    widget.Pacman(**base(bg='color4'), update_interval=1800),
+    widget.CheckUpdates(**base(bg='color4'), update_interval=1800),
 
     #powerline('color3', 'color4'),
 
@@ -107,7 +107,7 @@ secondary_widgets = [
 ]
 
 widget_defaults = {
-    'font': 'UbuntuMono Nerd Font Bold',
+    'font': 'Anonymice Nerd Font Bold',
     'fontsize': 14,
     'padding': 1,
 }
