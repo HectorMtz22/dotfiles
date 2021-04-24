@@ -10,7 +10,8 @@ from settings.widgets import primary_widgets, secondary_widgets
 import subprocess
 
 
-status_bar = lambda widgets: bar.Bar(widgets, 24, opacity=1)
+def status_bar(widgets): return bar.Bar(widgets, 24, opacity=0.9)
+
 
 screens = [Screen(top=status_bar(primary_widgets))]
 
