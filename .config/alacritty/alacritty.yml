@@ -1,0 +1,25 @@
+# Opacity
+
+background_opacity: 0.9
+
+# Font configuration (changes require restart)
+font:
+  # The size to use.
+  size: 14
+  # The normal (roman) font face to use.
+  normal:
+    family: Anonymice Nerd Font Mono
+    # Style can be specified to pick a specific face.
+    style: Regular
+
+  # The bold font face
+  bold:
+    family: Anonymice Nerd Font Mono
+    # Style can be specified to pick a specific face.
+    style: Bold
+
+  # The italic font face
+  italic:
+    family: Anonymice Nerd Font Mono
+    # Style can be specified to pick a specific face.
+    style: Italic

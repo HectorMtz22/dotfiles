@@ -9,5 +9,10 @@ cp -R -f ~/.oh-my-zsh/ ./
 cp -f ~/.vimrc ./
 cp -f ~/.zshrc ./
 cp -f ~/.npmrc ./
+
+cp -R -f ~/.config/redshift/ ./.config/
+cp -R -f ~/.config/alacritty/ ./.config/
+cp -R -f ~/.config/coc/ ./.config/
+cp -f ~/.xprofile ./
 # cp ~/.p10k.zsh ./.p10k.zsh
 
