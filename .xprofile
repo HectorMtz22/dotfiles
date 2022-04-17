@@ -1,0 +1,11 @@
+xrandr --output eDP-1 --primary --mode 1920x1080 --output HDMI-1 --mode 1366x768 --pos 1920x0 &
+setxkbmap latam &
+nm-applet &
+udiskie -t &
+volumeicon &
+cbatticon &
+picom &
+nitrogen --restore &
+imwheel -b 45 &
+xinput disable "ELAN1300:00 04F3:3104 Touchpad" & 
+redshift &
