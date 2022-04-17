@@ -1,9 +1,0 @@
-setxkbmap latam &
-nm-applet &
-udiskie -t &
-volumeicon &
-cbatticon &
-picom &
-feh --bg-scale ~/Images/wallpaper-3.jpg &
-xrandr --output eDP1 --primary --pos 0x0 --output VGA1 --pos 1366x0 &
-redshift &
