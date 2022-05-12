@@ -4,6 +4,7 @@ nm-applet &
 udiskie -t &
 volumeicon &
 cbatticon &
+blueman-applet &
 picom &
 nitrogen --restore &
 imwheel -b 45 &
