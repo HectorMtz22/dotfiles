@@ -78,15 +78,15 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     # ------------ Hardware Configs ------------
 
     # Volume
-    ([], "XF86AudioLowerVolume", lazy.spawn(
-        'pamixer --decrease 5'
-    )),
-    ([], "XF86AudioRaiseVolume", lazy.spawn(
-        "pamixer --increase 5"
-    )),
-    ([], "XF86AudioMute", lazy.spawn(
-        "pamixer --toggle-mute"
-    )),
+    #([], "XF86AudioLowerVolume", lazy.spawn(
+    #    'pamixer --decrease 5'
+    #)),
+    #([], "XF86AudioRaiseVolume", lazy.spawn(
+    #    "pamixer --increase 5"
+    #)),
+    #([], "XF86AudioMute", lazy.spawn(
+    #    "pamixer --toggle-mute"
+    #)),
 
     # Brightness
     ([], "XF86MonBrightnessUp", lazy.spawn("brightnessctl set +10%")),
