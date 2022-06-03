@@ -47,7 +47,7 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     ([mod, "control"], "r", lazy.restart()),
 
     ([mod, "control"], "q", lazy.shutdown()),
-    ([mod], "q", lazy.spawn("dm-tool lock")),
+    ([mod], "q", lazy.spawn("light-locker-command -l")),
     ([mod], "r", lazy.spawncmd()),
 
     # ------------ App Configs ------------
