@@ -8,6 +8,4 @@ cbatticon &
 blueman-applet &
 picom &
 nitrogen --restore &
-imwheel -b 45 &
-xinput disable "ELAN1300:00 04F3:3104 Touchpad" & 
 redshift &
