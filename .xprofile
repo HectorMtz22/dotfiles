@@ -9,3 +9,4 @@ blueman-applet &
 picom &
 nitrogen --restore &
 redshift &
+xinput set-prop "ELAN1300:00 04F3:3104 Touchpad" "libinput Tapping Enabled" 1 &
