@@ -138,6 +138,7 @@ alias n='nvim'
 alias c='code .'
 alias enabletouchpad='xinput enable "ELAN1300:00 04F3:3104 Touchpad" && killall imwheel && xinput set-prop "ELAN1300:00 04F3:3104 Touchpad" "libinput Tapping Enabled" 1'
 alias vsc='code .'
+alias google-chrome='google-chrome-stable'
 
 
 # For Nvm
