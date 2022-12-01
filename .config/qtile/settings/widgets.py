@@ -87,9 +87,10 @@ secondary_widgets = [
     powerline('color1', 'dark'),
     widget.CurrentLayoutIcon(**base(bg='color1'), scale=0.65),
     widget.CurrentLayout(**base(bg='color1'), padding=5),
-    powerline('color4', 'color1'),
-    icon(bg="color4", text=' '),  # Icon: nf-fa-download
-    widget.CheckUpdates(**base(bg='color4'), update_interval=1800),
+    # powerline('color4', 'color1'),
+    # icon(bg="color4", text=' '),  # Icon: nf-fa-download
+    # widget.CheckUpdates(**base(bg='color4'), update_interval=1800),
+    # widget.Battery(),
 ]
 
 widget_defaults = {
