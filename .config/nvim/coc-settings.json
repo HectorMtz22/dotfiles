@@ -19,5 +19,7 @@
     "vue-html": "html",
     "vue": "html",
     "javascript": "javascriptreact"
-  }
+  },
+	"diagnostic.messageTarget": "float",
+	"diagnostic.virtualText": true
 }
